@@ -15,10 +15,10 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+#RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Setup User
-RUN useradd --home /home/worker -M worker -K UID_MIN=10000 -K GID_MIN=10000
+RUN useradd --home /home/worker -M worker -K UID_MIN=10000 -K GID_MIN=10000 -s /bin/bash
 RUN mkdir /home/worker
 RUN chown worker:worker /home/worker
 RUN adduser worker sudo
