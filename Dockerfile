@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 MAINTAINER Martin Chan <osiutino@gmail.com>
-ENV REFRESHED_AT 2016-09-01
+ENV REFRESHED_AT 2016-10-18
 
 USER root
 
@@ -26,7 +26,7 @@ RUN echo 'worker ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 USER worker
 
-ENV RUBY_VERSION 2.1.2
+ENV RUBY_VERSION 2.3.1
 
 # Install RVM
 RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
