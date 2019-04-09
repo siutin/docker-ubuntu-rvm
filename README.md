@@ -8,6 +8,7 @@ View in GitHub  [siutin/ubuntu-rvm](https://github.com/siutin/ubuntu-rvm)
 
 # Images Version
 
+* v2.3.8_20190401
 * v2.3.1_20161018
 * v2.1.2_20161018
 
@@ -16,12 +17,12 @@ View in GitHub  [siutin/ubuntu-rvm](https://github.com/siutin/ubuntu-rvm)
 Verify version
 
 ```
-docker run siutin/ubuntu-rvm:v2.3.1_20161018 /bin/bash -l -c 'lsb_release -a; rvm -v; ruby -v'
+docker run siutin/ubuntu-rvm:v2.3.8_20190401 /bin/bash -l -c 'cat /etc/os-release; rvm -v; ruby -v'
 ```
 
 Execute ruby code directly
 ```
-docker run siutin/ubuntu-rvm:v2.3.1_20161018 /bin/bash -l -c 'ruby -e "puts \"hello world\" "'
+docker run siutin/ubuntu-rvm:v2.3.8_20190401 /bin/bash -l -c 'ruby -e "puts \"hello world\" "'
 ```
 
 # Check also
